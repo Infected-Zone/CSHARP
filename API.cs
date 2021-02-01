@@ -39,7 +39,6 @@ namespace ZoneAuth
                     {
                         MessageBox.Show("Error " + json.status, "Error", MessageBoxButton.OK, MessageBoxImage.Hand);
                         if (File.Exists("key.dat")) File.Delete("key.dat");
-                        System.Threading.Thread.Sleep(2000);
                         Environment.Exit(0);
                     }
                     else
